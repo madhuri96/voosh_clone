@@ -41,7 +41,8 @@ function App() {
       <div className="Container" >
        <div className='title'>Consolidate your restaurants' insights in one place. Unlock growth.</div>
        <div className='subtitle'>Your one stop solution to view mission-critical data and insights from all your locations in one place.</div>
-
+        <br/><br/>
+        <button className="btn btn-lg bg-primary text-white h2 btn2"><a href='#book'>Book Demo</a></button>
       </div>
 
       <div className='image_container'>
@@ -49,7 +50,7 @@ function App() {
       </div>
       </div>
 
-      <div className='booknow'>
+      <div className='booknow' id='book'>
         <div className='booknow_container'>
         <div className=' h1 text-white'>
           Book A Demo Now
@@ -58,36 +59,36 @@ function App() {
        <div className='form_container'>
       <form action='' className=' bg-white rounded'>
       <div className='m-1 '>
-      <label htmlFor='username'>Name</label>
+      <label htmlFor='username' className='text-dark h6'>Name</label>
       <br/>
       <input type="text" autoComplete='off' value={state.username} onChange={handleInput} name="username" id='username' className='intype' placeholder='Ex.John Doe'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='email' >Email</label>
+      <label htmlFor='email' className='text-dark h6'>Email</label>
       <br/>
       <input type="text" autoComplete='off' value={state.email} onChange={handleInput} name="email" id='email' className='intype' placeholder='Ex.Mail@gmail.com'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='companyname' >Company Name</label>
+      <label htmlFor='companyname' className='text-dark h6'>Company Name</label>
       <br/>
       <input type="text" autoComplete='off' value={state.companyname} onChange={handleInput} name="companyname" id='companyname'className='intype' placeholder='Ex.XYZ PVT LTD'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='yourtitle' >Your title</label>
+      <label htmlFor='yourtitle' className='text-dark h6'>Your title</label>
       <br/>
       <input type="text" autoComplete='off' value={state.yourtitle} onChange={handleInput} name="yourtitle" id='yourtitle' className='intype' placeholder='Ex.Oprational Head'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='password' >Password</label>
+      <label htmlFor='password' className='text-dark h6'>Password</label>
       <br/>
       <input type="password" autoComplete='off' value={state.password} onChange={handleInput} name="password" id='password' className='intype' placeholder='password'/>
       </div>
       <br/>
-      <button type="submit" className="btn btn-lg bg-primary text-white h2" onClick={handleSubmit}>Book Demo</button>
+      <button type="submit" className="btn btn1 btn-lg bg-primary text-white h2" onClick={handleSubmit}>Book Demo</button>
       
      </form>
 

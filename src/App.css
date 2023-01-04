@@ -39,6 +39,15 @@
   font-weight: 700;
 }
 
+.btn2{
+  margin: 75px;
+}
+
+.btn2 a{
+  color: white;
+  text-decoration: none;
+}
+
 .image_container{
   width: 50%;
 }
@@ -70,7 +79,7 @@
   width: 600px;
 }
 
-.btn{
+.btn1{
   width: 95%;
   margin-left: 10px;
 }
