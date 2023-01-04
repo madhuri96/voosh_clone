@@ -60,31 +60,31 @@ function App() {
       <div className='m-1 '>
       <label htmlFor='username'>Name</label>
       <br/>
-      <input type="text" autoComplete='off' value={state.username} onChange={handleInput} name="username" id='username' className='intype'/>
+      <input type="text" autoComplete='off' value={state.username} onChange={handleInput} name="username" id='username' className='intype' placeholder='Ex.John Doe'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='email'>Email</label>
+      <label htmlFor='email' >Email</label>
       <br/>
-      <input type="text" autoComplete='off' value={state.email} onChange={handleInput} name="email" id='email' className='intype'/>
+      <input type="text" autoComplete='off' value={state.email} onChange={handleInput} name="email" id='email' className='intype' placeholder='Ex.Mail@gmail.com'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='companyname'>Company Name</label>
+      <label htmlFor='companyname' >Company Name</label>
       <br/>
-      <input type="text" autoComplete='off' value={state.companyname} onChange={handleInput} name="companyname" id='companyname'className='intype'/>
+      <input type="text" autoComplete='off' value={state.companyname} onChange={handleInput} name="companyname" id='companyname'className='intype' placeholder='Ex.XYZ PVT LTD'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='yourtitle'>Your title</label>
+      <label htmlFor='yourtitle' >Your title</label>
       <br/>
-      <input type="text" autoComplete='off' value={state.yourtitle} onChange={handleInput} name="yourtitle" id='yourtitle' className='intype'/>
+      <input type="text" autoComplete='off' value={state.yourtitle} onChange={handleInput} name="yourtitle" id='yourtitle' className='intype' placeholder='Ex.Oprational Head'/>
       </div>
 
       <div className='m-1'>
-      <label htmlFor='password'>Password</label>
+      <label htmlFor='password' >Password</label>
       <br/>
-      <input type="password" autoComplete='off' value={state.password} onChange={handleInput} name="password" id='password' className='intype'/>
+      <input type="password" autoComplete='off' value={state.password} onChange={handleInput} name="password" id='password' className='intype' placeholder='password'/>
       </div>
       <br/>
       <button type="submit" className="btn btn-lg bg-primary text-white h2" onClick={handleSubmit}>Book Demo</button>
@@ -97,7 +97,8 @@ function App() {
 
       </div>
 
-      <div className='bg-info' >
+       {/* only for checking (form working) */}
+      <div className='check bg-info' >
       {
         records.map((curElem) => {
           return(
